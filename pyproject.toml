@@ -1,0 +1,18 @@
+[project]
+name = "mcp-server-gaokao"
+version = "0.1.7"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.12.3",
+    "requests>=2.32.4",
+    "starlette>=0.47.2",
+]
+
+[project.scripts]
+mcp-server-gaokao = "mcp_server_gaokao:main" # Make the package can be run by `uv run mcp-server-gaokao`
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
